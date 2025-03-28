@@ -110,17 +110,4 @@
 
 ## 7. 编译 LaTeX 文档
 
-建议使用 `pdflatex` 和 `bibtex` 进行编译：
-
-```bash
-pdflatex main.tex
-bibtex main
-pdflatex main.tex
-pdflatex main.tex
-```
-
-这样可以正确生成参考文献。
-
----
-
-以上是本 LaTeX 示例文档的使用说明，希望对你有所帮助！
+建议使用 `xelatex` 进行编译。
