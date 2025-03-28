@@ -17,13 +17,14 @@
 \maketitle
 
 \section{引言}
-这是一个支持中文和 BibTeX 的 LaTeX 示例文档。 你可以引用文献，例如 \cite{zhao2024autonomous}。
+这是一个支持中文和 BibTeX 的 LaTeX 示例文档模板。 
 
 \section{方法}
 这里是方法部分。
-各特征层的尺寸及通道数如表\ref{tab:feature_map_sizes}所示：
 
-\begin{table}[hbt]
+\subsection{插入表格}
+你可以插入表格，如表\ref{tab:feature_map_sizes}所示：
+  \begin{table}[hbt]
     \centering
     \caption{MobileNetV4-Conv-L特征层的尺寸和通道数} 
     \label{tab:feature_map_sizes}
@@ -40,15 +41,19 @@
     \end{tabular*}
   \end{table}
 
+\subsection{插入图片}
+你也可以插入图片，如图\ref{fig:seg}所示：
+  \begin{figure}[hbt]
+      \centering
+      \includegraphics[width=0.45\textwidth]{figures/seg.png}
+      \caption{语义分割结果图}\label{fig:seg}
+     \end{figure}
+
+\subsection{引用文献}
+你可以引用文献，例如\cite{zhao2024autonomous}。
+
 \section{结论}
 这是结论部分。
-网络框架如图\ref{fig:basenetwork}所示：
-\begin{figure}[hbt]
-    \centering
-    \includegraphics[width=0.5\textwidth]{figures/seg.png}
-    % \caption[这里的文字将会显示在 listoffigure 中]{这里的文字将会显示在正文中}
-    \caption{深度估计-语义分割联合网络框架}\label{fig:basenetwork}
-   \end{figure}
 
 \bibliography{main}
 
